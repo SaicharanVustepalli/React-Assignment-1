@@ -1,0 +1,39 @@
+<html>
+   <head>
+      <title>Evenly or not</title>
+   </head>
+   <body>
+
+<form>
+1st Number : <input type="text" id="firstNumber" /><br>
+2nd Number: <input type="text" id="secondNumber" /><br>
+<input type="button" onClick="divideBy()" Value="Divide" />
+</form>
+<p>The Result is : <br>
+<span id = "result"></span>
+  <br>
+  <span id = "demo"></span>
+</p>
+
+
+<script>
+function divideBy() 
+{ 
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+document.getElementById("result").innerHTML = num1 / num2;
+  
+    if (result %2 == 0)
+    {
+        text = "True";
+    }
+    else
+    {
+       text = "False";
+  }
+   
+   document.getElementById("demo").innerHTML = text;
+}
+</script>
+</body>
+</html>
